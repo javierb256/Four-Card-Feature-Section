@@ -55,3 +55,33 @@ body {
   --white: hsl(0, 0%, 100%);
   --poppins: "Poppins", sans-serif;
 }
+
+h1 {
+  font-family: var(--poppins);
+  text-align: center;
+  color: var(--grey-500);
+  margin-top: 4rem;
+}
+
+h1 > span {
+  font-weight: 200;
+}
+
+h1 + p {
+  display: block;
+  margin: 0.5rem auto;
+  text-align: center;
+  width: 550px;
+}
+
+.card {
+  font-family: var(--poppins);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
