@@ -74,8 +74,40 @@ h1 + p {
   width: 550px;
 }
 
+.card-container {
+  display: block;
+  margin-left: 500px;
+}
 .card {
   font-family: var(--poppins);
+  width: 400px;
+  height: 230px;
+  padding: 2rem 2rem;
+  border-radius: 7px;
+  position: relative;
+}
+
+.line {
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  border-radius: 7px;
+  background-color: red;
+  height: 20px;
+  width: 100%;
+}
+.card h3 {
+  color: var(--grey-500);
+}
+
+.card p {
+  color: var(--grey-400);
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-top: 1rem;
 }
 
 .attribution {
