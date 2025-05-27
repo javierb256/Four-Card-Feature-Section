@@ -88,6 +88,8 @@ h1 + p {
   margin: 0.5rem auto;
   text-align: center;
   width: 550px;
+  color: var(--grey-500);
+  font-family: var(--poppins);
 }
 
 .card-container {
@@ -155,8 +157,35 @@ h1 + p {
     margin-right: auto;
     box-shadow: 0px 0px 12px 6px hsl(0, 0%, 91%);
   }
+  .attribution {
+    margin-top: 3rem;
+  }
 }
 
-/* @media screen and (max-width: 575px) {
+@media screen and (max-width: 575px) {
+  h1 {
+    width: 90%;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 + p {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  .card {
+    height: 260px;
+  }
 
-} */
+  .card img {
+    padding-top: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 350px){
+  h1 {
+    font-size: 1.4rem;
+  }
+}
