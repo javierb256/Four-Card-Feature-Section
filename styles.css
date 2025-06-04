@@ -37,6 +37,10 @@ body {
   padding: 0;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   font-size: 15px;
 }
@@ -94,12 +98,11 @@ h1 + p {
 
 .card-container {
   display: block;
-  margin-left: 500px;
 }
 .card {
   font-family: var(--poppins);
   width: 400px;
-  height: 230px;
+  height: 260px;
   border-radius: 7px;
   position: relative;
   box-shadow: 0px 0px 20px 5px hsl(0, 0%, 95%);
@@ -129,7 +132,7 @@ h1 + p {
 .card img {
   display: block;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .attribution {
@@ -140,7 +143,64 @@ h1 + p {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 767px){
+footer {
+  /* position: absolute; */
+  bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .card-container {
+    height: 500px;
+    width: 80%;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+    justify-content: center;
+    grid-template-areas:
+      "supervisor builder calculator"
+      "supervisor builder calculator"
+      "supervisor karma   calculator";
+
+    /* grid-template-columns: ; */
+    /* grid-template-rows: ; */
+    /* grid-column: ; */
+    /* grid-row */
+  }
+
+  #supervisor {
+    grid-area: supervisor;
+    grid-row-start: 2;
+  }
+
+  #builder {
+    grid-area: builder;
+  }
+
+  #karma {
+    grid-area: karma;
+  }
+
+  #calculator {
+    grid-area: calculator;
+    grid-row-start: 2;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
   h1 + p {
     margin-top: 1rem;
     margin-bottom: 5rem;
@@ -181,10 +241,9 @@ h1 + p {
   .card img {
     padding-top: 1rem;
   }
-
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 350px) {
   h1 {
     font-size: 1.4rem;
   }
