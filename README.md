@@ -24,7 +24,7 @@ Users should be able to:
 
 ![screenshot](./images/Screenshot.png)
 
-### Linksß
+### Links
 
 - Solution URL: [https://github.com/javierb256/Four-Card-Feature-Section](https://github.com/javierb256/Four-Card-Feature-Section)
 - Live Site URL: [https://javierb256.github.io/Four-Card-Feature-Section/](https://javierb256.github.io/Four-Card-Feature-Section/)
